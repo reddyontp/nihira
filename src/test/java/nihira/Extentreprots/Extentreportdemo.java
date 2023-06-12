@@ -27,7 +27,7 @@ public class Extentreportdemo {
 		extent =new ExtentReports();
 		extent.attachReporter(reporter); //attaching report 
 		extent.setSystemInfo("tester", "Showri");
-		
+		extent.setSystemInfo("designer", "Mouni");
 	}
 		
 	@Test
