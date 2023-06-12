@@ -27,7 +27,9 @@ public class Extentreportdemo {
 		extent =new ExtentReports();
 		extent.attachReporter(reporter); //attaching report 
 		extent.setSystemInfo("tester", "Showri");
+		extent.setSystemInfo("HACKER", "swetha");
 		extent.setSystemInfo("designer", "Mouni");
+		extent.setSystemInfo("coder", "chaitu");
 	}
 		
 	@Test
@@ -39,6 +41,8 @@ public class Extentreportdemo {
 		WebDriver driver= new ChromeDriver();                         // chrome storing in "driver" object 
 		driver.get("https://proh2r.com/baranwalconsultancyservices/emp/#/services");        // so ,here driver  opening specified website
 		System.out.println(driver.getTitle());                         //here getting title of the page
-	   extent.flush();
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getTitle());
+		extent.flush();
 	}
 }
